@@ -24,8 +24,12 @@ Below are some of the plots generated during the evaluation phase:
    ```bash
    & D:\2025\Fraud_Detection_Project\fraud-env\Scripts\Activate.ps1
    ```
-2. Install the required dependencies.
+2. Install the required dependencies (including `streamlit`).
 3. Run the scripts in the `src/` folder for data preprocessing, model training, and evaluation.
+
+## Streamlit Frontend
+- Start the dashboard: `streamlit run src/streamlit_app.py`
+- Upload a merged transactions CSV (transaction + identity features). The app fits encoders/scalers using the training data and returns fraud probabilities and labels. A single-record JSON input is also supported.
 
 ## Note
 The `data/` folder is excluded from the repository for privacy reasons. Please add the dataset files to the `data/` folder before running the project.
